@@ -1,0 +1,51 @@
+div {
+    padding: 20px;
+    text-indent: 20px;
+    margin:10px;
+    width:300px;
+}
+div.LowerBounds {
+    float: left;
+    width:300px;
+    background-color: #c7cdd1;
+    height:450px;
+    
+}
+div.Histogram {
+    float: left;
+    width:300px;
+    background-color: #c7cdd1;
+    height:300px;
+    
+}
+div.NewGrade{
+    position: absolute;
+    top: 440px;
+    left: 365px;
+    width: 300px;
+    height: 150px;
+   
+    background-color: #c7cdd1;
+  
+}
+h3 {
+    color: #CC0633;
+    font: sans-serif;
+}
+table, td, th{
+    padding:1px;
+    margin-left: 10%;
+}
+th{
+    text-align: left;
+}
+.spacing{
+    height:30px;
+}
+td{
+    padding-left:50px;
+   
+}
+.resizedTextbox {
+    width: 50px;
+}

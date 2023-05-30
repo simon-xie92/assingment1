@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Histogram Generator</title>
+        <link rel="stylesheet" href="/css/histogram.css"></link>
+        <script src="js/calculate.js" defer> </script>
+    </head>
+    <body>
+    
+        <h1> Histogram Generator</h1>
+        <div class="LowerBounds">
+            <h3>Lower Bounds</h3>
+            <table id="table1">
+                <tr class="spacing"><th>Max</th>
+                    <td><input type="text" id="0" name="Max" value = "100.00" class="resizedTextbox"></td></tr>
+                <tr class="spacing"><th>A+</th>
+                    <td><input type="text" id="1" name="A+" value = "95.00" class="resizedTextbox"></td></tr>
+                <tr class="spacing"><th>A </th>
+                    <td><input type="text" id="2" name="A" value = "90.00" class="resizedTextbox"></td></tr>
+                <tr class="spacing"><th>A-</th>
+                    <td> <input type="text" id="3" name="A-" value = "85.00" class="resizedTextbox"></td></tr>
+                <tr class="spacing"><th>B+</th>
+                    <td><input type="text" id="4" name="B+" value = "80.00" class="resizedTextbox"></td></tr>
+                <tr class="spacing"><th>B </th>
+                    <td><input type="text" id="5" name="B" value = "75.00" class="resizedTextbox"></td></tr>
+                <tr class="spacing"><th>B-</th>
+                    <td><input type="text" id="6" name="B-" value = "70.00" class="resizedTextbox"></td></tr>
+                <tr class="spacing"><th>C+</th>
+                    <td><input type="text" id="7" name="C+" value = "65.00" class="resizedTextbox"></td></tr>
+                <tr class="spacing"><th>C </th>
+                    <td><input type="text" id="8" name="C" value = "60.00" class="resizedTextbox"></td></tr>
+                <tr class="spacing"><th>C-</th>
+                    <td><input type="text" id="9" name="C-" value = "55.00" class="resizedTextbox"></td></tr>
+                <tr class="spacing"><th>D </th>
+                    <td><input type="text" id="10" name="D" value = "50.00" class="resizedTextbox"></td></tr>
+                <tr class="spacing"><th>F </th>
+                    <td><input type="text" id="11" name="F" value = "0.00" class="resizedTextbox"></td></tr>
+           </table> 
+        </div>
+        <div class="Histogram">
+            <h3>Histogram</h3>
+            <table id="table2">
+                <tr><th>A+ </th><td><output id="A+"></td></tr>
+                <tr><th>A</th><td><output id="A"></td></tr>
+                <tr><th>A- </th><td><output id="A-"></td></tr>
+                <tr><th>B+ </th><td><output id="B+"></td></tr>
+                <tr><th>B </th><td><output id="B"></td></tr>
+                <tr><th>B- </th><td> <output id="B-"></td></tr>
+                <tr><th>C+ </th><td><output id="C+"></td></tr>
+                <tr><th>C </th><td><output id="C"></td></tr>
+                <tr><th>C- </th><td><output id="C-"></td></tr>
+                <tr><th>D </th><td><output id="D"></td></tr>
+                <tr><th>F </th><td><output id="F"></td></tr>
+            </table>
+        </div>
+        <div class = "NewGrade">
+            <p> New Grade: <input type="text" id="newGrade" name="newGrade" onkeypress="return
+                enterKeyPressed(event)"/><br><br> </p>
+            <button id="myBtn" onclick="calculate()">Calculate</button>
+        </div>
+   
+    </body>
+</html>
